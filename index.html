@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es-ES" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Erik Mila">
+  <meta name="description"
+    content="Portafolio hecho por Erik Mila, desarrollador frontend dedicado al aprendizaje constante y con emoción por trabajar en el mundo del desarrollo web">
+  <meta name="keywords" content="HTML, CSS, JavaScript, PHP, Desarrollo Web, Freelancer, Paginas Web">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="imagenes/dev-web.png" type="image/x-icon">
+  <title>Tecnometropolis-inc</title>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&amp;display=swap" rel="stylesheet">
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- JavaScript -->
+  <script src="main.js" defer></script>
+  <script async src="https://www.google.com/recaptcha/api.js"></script>
+  <!--Redes Sociales-->
+  <meta property="og:locale" content="es_Co">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Tecnometropolis-inc | Erik Mila">
+  <meta property="og:description"
+    content="Portafolio hecho por Erik Mila, desarrollador frontend dedicado al aprendizaje constante y con emoción por trabajar en el mundo del desarrollo web">
+  <meta property="og:url" content="https://tecnometropolis-inc.web.app/">
+  <meta property="og:image" content="https://tecnometropolis-inc.web.app/imagenes/dev-web-expanded.png">
+  <meta name="twitter:title" content="Tecnometropolis-inc | Erik Mila">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description"
+    content="Portafolio hecho por Erik Mila, desarrollador frontend dedicado al aprendizaje constante y con emoción por trabajar en el mundo del desarrollo web">
+  <meta name="twitter:image" content="https://tecnometropolis-inc.web.app/imagenes/dev-web-expanded.png">
+
+</head>
+
+<body class="text-center">
+  <!-- Encabezado -->
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><b>Tecnometropolis-inc</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbar-toggler">
+          <ul class="navbar-nav d-flex justify-content-center align-items-end">
+            <li class="nav-item item1">
+              <a class="nav-link" aria-current="page" href="#yo">¿Quien soy?</a>
+            </li>
+            <li class="nav-item item2">
+              <a class="nav-link" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item item3">
+              <a class="nav-link" href="#ejemplos">Ejemplos</a>
+            </li>
+            <li class="nav-item item4">
+              <a class="nav-link" href="#contactanos">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Modo oscuro -->
+  <div class="darkModeContainer">
+    <button type="button" class="btn text-primary-emphasis bg-primary-subtle border border-primary-subtle"
+      id="darkMode">
+      <i class="bi bi-moon-stars-fill"></i>
+    </button>
+  </div>
+  
+  <!-- Sobre quien soy -->
+  <section class="container mb-5" id="yo">
+    <div class="mb-2 mt-5 d-flex flex-column align-items-center justify-content-center">
+      <div
+        class="logoContainer bg-primary-subtle border border-primary-subtle d-flex align-items-center justify-content-center rounded-4">
+        <img src="imagenes/dev-web.png" class="logo rounded-3" alt="">
+      </div>
+      <h1>Hola, soy Erik Mila</h1>
+      <h2>Soy desarrollador web y técnico en sistemas</h2>
+      <p>Me encuentro en busqueda de retos diariamente, siempre queriendo mejorar con el paso del tiempo aprendiendo y
+        desarrollando nuevas habilidades, soy una persona que no se queda con lo primero que encuentra, siempre busco
+        una solución que genere satisfacción.</p>
+      <b>"un día sin aprender es un día perdido"</b>
+    </div>
+  </section>
+
+  <!-- Boton de subir -->
+  <div id="goUpContainer">
+    <button type="button" class="btn scrollUp" id="goUp">
+      <i class="bi bi-arrow-up-circle-fill"></i>
+    </button>
+  </div>
+
+  <!--Sección de experiencia-->
+  <section class="container mb-5" id="experiencia">
+    <h2>Experiencia</h2>
+    <div class="row">
+      <div class="col-sm-6 mb-2 rounded-5 exp1">
+        <div class="card">
+          <div class="card-body bg-primary-subtle">
+            <img src="imagenes/codigo.png" class="card-img-top codigo" alt="Image not found">
+            <h5 class="card-title">Que puedes obtener de mi</h5>
+            <p class="card-text">Desarrollo sitios que sean responsivos, es decir, que se adaptaran a distintos
+              dispositivos, podrás visualizar tu web desde un smartphone, tableta, laptop o equipo de escritorio,
+              siendo esto algo muy llamativo para tu sitio web. Con gusto te atenderé y brindare mi experiencia para
+              ofrecerte el mejor servicio para que tu sitio web sea atractivo para tu negocio.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 rounded-5 exp2">
+        <div class="card">
+          <div class="card-body bg-primary-subtle">
+            <img src="imagenes/lenguajes.png" class="card-img-top lenguajes" alt="Image not found">
+            <h5 class="card-title">Conocimientos</h5>
+            <p class="card-text">Cuento con conocimiento en JavaScript, PHP, MySQL, FireBase y Bootstrap; también he
+              trabajado con React, soy muy bueno con el etiquetado de HTML, esto permitirá que tu web tenga un mejor SEO
+              (Search Engine Optimization),esto permite un mejor posicionamiento en los buscadores como Google o Bing.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrusel ejemplos -->
+  <section class="container mb-5" id="ejemplos">
+    <h2>Ejemplos</h2>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://tecnometropolis-inc.web.app/imagenes/dev-web-expanded.png" class="d-block w-100"
+            alt="Ejemplos Web" id="imagen1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://tecnometropolis-inc.web.app/imagenes/dev-web-expanded.png" class="d-block w-100"
+            alt="Ejemplos Web" id="imagen1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://tecnometropolis-inc.web.app/imagenes/dev-web-expanded.png" class="d-block w-100"
+            alt="Ejemplos Web" id="imagen1">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Alerta de info guardada -->
+  <div class="toast align-items-center text-bg-primary border-0 top-0 start-50 translate-middle-x fixed-top"
+    role="alert" aria-live="assertive" aria-atomic="true" id="guardoInfo">
+    <div class="d-flex">
+      <div class="toast-body">
+        ¡Información guardada con éxito!
+      </div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+
+  <!-- Alerta de info sin guardar -->
+  <div class="toast align-items-center text-bg-primary border-0 top-0 start-50 translate-middle-x fixed-top"
+    role="alert" aria-live="assertive" aria-atomic="true" id="sinGuardar">
+    <div class="d-flex">
+      <div class="toast-body">
+        Informacion incompleta, por favor registrar toda la información en los campos "Nombre y Apellidos"
+        "Celular/Teléfono" y "Correo"
+      </div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+
+  <!--Pie de pagina-->
+  <footer class="container">
+    <div id="contactanos" class="container bg-primary-subtle p-3 mb-5 rounded-3">
+      <h2>
+        Contacto
+      </h2>
+      <form id="formularioContacto" autocapitalize="characters" class="form-floating">
+        <div class="form-floating">
+          <input type="text" class="form-control mb-2" id="nombre" required="required" placeholder="Nombres y Apellidos">
+          <label for="nombre">Nombres y Apellidos</label>
+        </div>
+        <div class="form-floating">
+          <input type="tel" class="form-control mb-2" id="celular" required="required" placeholder="Celular/Teléfono">
+          <label for="celular">Celular/Teléfono</label>
+        </div>
+        <div class="form-floating">
+          <input type="email" class="form-control mb-2" id="correo" required="required" placeholder="Email">
+          <label for="correo">Email</label>
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control mb-2" placeholder="Comentarios adicionales" id="comentarios"
+            style="height: 100px"></textarea>
+          <label for="comentarios">Comentarios adicionales</label>
+        </div>
+        <input class="btn text-primary-emphasis bg-success-subtle border rounded-5 border-primary-subtle mb-2"
+          type="submit" id="btnEnviar" value="Enviar">
+      </form>
+    </div>
+    <span class="float-start">
+      Creado por Erik Mila ©
+    </span>
+  </footer>
+
+  <!-- Firebase -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="conexionBD.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+* {
+    font-family: 'Kanit', cursive, sans-serif;
+}
+
+/* encabezado y navbar */
+
+header {
+    animation: encabezado 500ms 300ms forwards;
+    opacity: 0;
+}
+
+@keyframes encabezado {
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .item1 {
+        transform: translatey(-100%);
+        animation: item1 700ms 150ms forwards;
+    }
+
+    .item2 {
+        transform: translatey(-100%);
+        animation: item1 700ms 300ms forwards;
+    }
+
+    .item3 {
+        transform: translatey(-100%);
+        animation: item1 700ms 450ms forwards;
+    }
+
+    .item4 {
+        transform: translatey(-100%);
+        animation: item1 700ms 600ms forwards;
+    }
+
+    @keyframes item1 {
+        to {
+            transform: translateY(0);
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .item1 {
+        transform: translatex(120%);
+        animation: item1 700ms 150ms forwards;
+    }
+
+    .item2 {
+        transform: translatex(120%);
+        animation: item1 700ms 300ms forwards;
+    }
+
+    .item3 {
+        transform: translatex(120%);
+        animation: item1 700ms 450ms forwards;
+    }
+
+    .item4 {
+        transform: translatex(120%);
+        animation: item1 700ms 600ms forwards;
+    }
+
+    @keyframes item1 {
+        to {
+            transform: translatex(0);
+        }
+    }
+}
+
+
+b {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/* boton modo oscuro */
+
+.darkModeContainer {
+    position: absolute;
+    margin-top: 20px;
+    right: 1rem;
+    scale: 0;
+    animation: modoOscuro 500ms 300ms forwards;
+}
+
+@keyframes modoOscuro {
+    to {
+        scale: 1;
+    }
+}
+
+/* quien soy */
+
+.logoContainer {
+    width: 270px;
+    height: 270px;
+    margin: 4rem 1rem;
+    opacity: 0;
+    rotate: 45deg 45deg;
+    animation: foto 1500ms 300ms forwards;
+}
+
+.logo {
+    height: 250px;
+    opacity: 0;
+    animation: foto 1500ms 300ms forwards;
+}
+
+@keyframes foto {
+    to {
+        opacity: 1;
+        rotate: 0 0;
+    }
+}
+
+#yo h1,
+#yo h2,
+#yo p,
+#yo b {
+    opacity: 0;
+    translate: 0 -50%;
+    animation: textoQuienSoy 1s 500ms forwards;
+}
+
+@keyframes textoQuienSoy {
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+
+.lenguajes {
+    max-height: 170px;
+    max-width: 170px;
+}
+
+.codigo {
+    min-height: 110px;
+}
+
+.imagenExpandida {
+    height: 800px;
+    width: 500px;
+}
+
+#imagen1,
+#imagen2,
+#imagen3 {
+    max-height: 750px;
+}
+
+#captcha:hover {
+    cursor: pointer;
+}
+
+/* boton hacia arriba */
+
+#goUp {
+    position: fixed;
+    z-index: 2100;
+    font-size: 2rem;
+    transition: 300ms;
+}
+
+#goUpContainer {
+    position: absolute;
+    top: 93%;
+    right: 3rem;
+}
+
+.scrollUp {
+    scale: 0;
+}
+
+.scrollDown {
+    scale: 1;
+}
+
+/* experiencia */
+
+@media screen and (min-width: 1024px) {
+    #experiencia {
+        opacity: 0;
+        view-timeline-name: --ejemplos;
+        view-timeline-axis: block;
+
+        animation-timeline: --ejemplos;
+        animation-name: experiencia;
+
+        animation-range: entry 60%;
+        animation-fill-mode: forwards;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #experiencia {
+        opacity: 0;
+        view-timeline-name: --ejemplos;
+        view-timeline-axis: block;
+
+        animation-timeline: --ejemplos;
+        animation-name: experiencia;
+
+        animation-range: entry 30%;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+@keyframes experiencia {
+    from {
+        filter: blur(10px);
+        translate: 0 -20%;
+    }
+
+    to {
+        filter: blur(0);
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+/* ejemplos */
+
+#ejemplos {
+    opacity: 0;
+    view-timeline-name: --ejemplos;
+    view-timeline-axis: block;
+
+    animation-timeline: --ejemplos;
+    animation-name: ejemplos;
+
+    animation-range: entry 25%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ejemplos {
+    from {
+        filter: blur(10px);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+/* formulario */
+
+#contactanos {
+    opacity: 0;
+    view-timeline-name: --formulario;
+    view-timeline-axis: block;
+
+    animation-timeline: --formulario;
+    animation-name: entradaFormulario;
+
+    animation-range: entry 25%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entradaFormulario {
+    from {
+        filter: blur(10px);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+#captcha {
+    min-width: 130px;
+    max-width: 170px;
+}

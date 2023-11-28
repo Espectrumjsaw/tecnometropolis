@@ -1,0 +1,17 @@
+Componente:
+Parte de la interfaz de usuario que es independiente y reusable
+Funcionales:
+- Son los mas usados y son las usadas presentemente
+- Es una funcion en JS/ES6 con extension JSX
+De Clase:
+Son los que se usaban anteriormente
+
+
+Props: Argumentos que puede recibir un componente de React
+
+Conceptos Importantes:
+ - Componente
+ - props
+ - Estado
+ - Hooks
+ - Even Listener
